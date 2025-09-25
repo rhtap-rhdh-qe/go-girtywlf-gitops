@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: go-girtywlf-gitops
+  description: This is GitOps manifest for go-girtywlf   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=go-girtywlf
+    backstage.io/kubernetes-id: go-girtywlf 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: go-girtywlf
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:go-girtywlf
