@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay.io/rhtap_qe/go-girtywlf:8026d161e173e2e869b244e3df69baacc0c494d0@sha256:b5a7c357e6113031a01e50e9e59ac295bbf6a481dba693d968b5b50494a9347e
+        - image: quay.io/rhtap_qe/go-girtywlf:d6340ada170c43a4e9147c4426a69c0ac9582c35@sha256:ac685ef75e81aff20b0d6411d3c14ae6278a84a09763211dc1a0e683a8436787
           name: container-image
